@@ -76,6 +76,10 @@ conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvi
 
 ## The Slurm System
 
-When you connect to via SSH, you will connect to the log-in node. However usually, you might wanna use the SLURM system to send jobs. 
+When you connect to via SSH, you will connect to the log-in node. However usually, you might wanna use the SLURM system to send jobs. You have an account with core-hours that you can use (Students 500 / Hiwis - Assis 2000). For more details or how to file a project request, see the itc-website.
 Place the jobscript.sh in your main directory and configure cmd commands in there.
 All necessary commands will be explained in this file!!
+
+## Known Issues
+CUDA drivers might not always be compatible with GCC, but so do libs:
+Matplotlib 3.1.1 can be used with GCC9.4.0 as it is the latest stable release for python 3.8. Higher versions work with higher gcc drivers. If you encounter an issue, please report it so it can be added here in this section.
