@@ -80,6 +80,8 @@ When you connect to via SSH, you will connect to the log-in node. However usuall
 Place the jobscript.sh in your main directory and configure cmd commands in there.
 All necessary commands will be explained in this file!!
 
+Finally create a directory (on the same level as the jobscript) and name it output.
+
 ## Known Issues
 CUDA drivers might not always be compatible with GCC, but so do libs:
 Matplotlib 3.1.1 can be used with GCC9.4.0 as it is the latest stable release for python 3.8. Higher versions work with higher gcc drivers. If you encounter an issue, please report it so it can be added here in this section.
