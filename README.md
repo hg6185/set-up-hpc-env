@@ -36,6 +36,9 @@ As it can be seen in the itc documentation of the hpc, there are many ways on ho
 
 ```
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+```
+
+```
 bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
 rm -rf ~/miniconda3/miniconda.sh
 ~/miniconda3/bin/conda init bash
@@ -82,6 +85,12 @@ All necessary commands will be explained in this file!!
 
 Finally create a directory (on the same level as the jobscript) and name it output.
 
+## Data Transfer
+
+SFTP -> Mac: CyberDuck, WinSCP
+ab123456@copy18-1.hpc.itc.rwth-aachen.de
+
 ## Known Issues
+
 CUDA drivers might not always be compatible with GCC, but so do libs:
 Matplotlib 3.1.1 can be used with GCC9.4.0 as it is the latest stable release for python 3.8. Higher versions work with higher gcc drivers. If you encounter an issue, please report it so it can be added here in this section.
